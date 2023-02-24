@@ -1,0 +1,236 @@
+<html> 
+<head>  
+<title>Isaac Character Selector</title>  
+<style>  
+body {  
+margin-top: 30px; 
+ background-color: black;
+}  
+ 
+</style>   
+</head>  
+  
+<script>  
+
+function displayRandomImages()   
+{  
+    
+   //array of images with image location, height, and width  
+   var imageArray = [  
+   {   
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-isaac-308x420.png",  
+     width: "308",  
+     height: "420"
+       
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-maggy-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-cain-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },  
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-blue_baby-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-judas-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+    {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-eve-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-samson-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-lazarus-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-lilith-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-the_forgotten-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/b2-eden-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/g2-azazel-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+    {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/g2-the_lost-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/g2-the_keeper-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/g2-apollyon-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-bethany-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-jacob_and_esau-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {   
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_broken-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_dauntless-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_hoarder-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },  
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_deceiver-308x420.png",  
+     width: "308",  
+     height: "420"  
+   },   
+   {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_soiled-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+    {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_curdled-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_savage-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_benighted-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_enigma-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+       {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_capricious-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_baleful-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_harlot-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+    {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_miser-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_empty-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_fettered-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_zealot-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+      {  
+     src: "https://foursouls.com/wp-content/uploads/2022/01/r-the_deserter-308x420.png",  
+     width: "308",  
+     height: "420"  
+    },
+     
+     
+     
+   ];  
+      
+    //find the length of the array of images  
+    var arrayLength = imageArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image();  
+        newArray[i].src = imageArray[i].src;  
+        newArray[i].width = imageArray[i].width;  
+        newArray[i].height = imageArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+  // remove the previous images  
+  var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     images[0].parentNode.removeChild(images[0]);  
+  }  
+  // display the new random image    
+  document.body.appendChild(newImage);  
+}  
+</script>  
+
+<body>  
+<div>  
+
+<center><img onclick="displayRandomImages(); " src="https://foursouls.com/wp-content/uploads/2022/03/OutsideCardBack-110x150.png" width="308" height="420"></center>
+
+</div>  
+</body>  
+    
+    </html>
